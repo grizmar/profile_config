@@ -12,20 +12,20 @@
 [http]
     sslVerify = false
 [alias]
-    clog = log —graph —oneline —abbrev-commit —decorate
+    clog = log --graph --oneline --abbrev-commit --decorate
     st = status -uno
     cm = commit -m
-    sh = status —short —branch
-    merc = merge —no-ff
+    sh = status --short --branch
+    merc = merge --no-ff
     df = diff
-    del = checkout —
+    del = checkout --
     ch = checkout
     cb = checkout -b
     br = branch
-    commend = commit —amend —no-edit
-    grog = log —graph —abbrev-commit —decorate —all \n--format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
-    lg = log —pretty=oneline —pretty=format:\"%Cblue%h %Creset: %an, %ar %Creset: %Cgreen%s\"
-    branch-name = rev-parse —abbrev-ref HEAD
+    commend = commit --amend --no-edit
+    grog = log --graph --abbrev-commit --decorate --all \n--format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+    lg = log --pretty=oneline --pretty=format:\"%Cblue%h %Creset: %an, %ar %Creset: %Cgreen%s\"
+    branch-name = rev-parse --abbrev-ref HEAD
     update = "!f(){ b=$(git branch-name); git pull origin "$b"; };f"
     up = "!f(){ b=$(git branch-name); git pull origin "$b"; };f"
     end = "!f(){ b=$(git branch-name); git push origin "$b"; };f"

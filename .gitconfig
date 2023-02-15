@@ -29,6 +29,7 @@
     update = "!f(){ b=$(git branch-name); git pull origin "$b"; };f"
     up = "!f(){ b=$(git branch-name); git pull origin "$b"; };f"
     end = "!f(){ b=$(git branch-name); git push origin "$b"; };f"
+    endf = "!f(){ b=$(git branch-name); git push origin "$b" --force; };f"
     co = "!f(){ m=$1; b=$(git branch-name); git commit -m \"$b //$m\"; };f"
     switch = "!f(){ b=$1; git fetch origin "$b"; git checkout "$b"; git pull origin "$b";};f"
 

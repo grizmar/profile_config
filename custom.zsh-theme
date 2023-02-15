@@ -82,7 +82,7 @@ function steeef_precmd {
             PR_GIT_UPDATE=1
             FMT_BRANCH="[%{$turquoise%}%b %c%u%{$hotpink%}●${PR_RST}]"
         else
-            FMT_BRANCH="[(]%{$turquoise%}%b %c%u${PR_RST}]"
+            FMT_BRANCH="[%{$turquoise%}%b %c%u${PR_RST}]"
         fi
         zstyle ':vcs_info:*:prompt:*' formats "${FMT_BRANCH} "
 
